@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB7B2A33208BFB3C001881A7 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7B2A32208BFB3C001881A7 /* WeatherVC.swift */; };
+		AB99635C208E2B0900627A3B /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99635B208E2B0900627A3B /* WeatherDataModel.swift */; };
+		AB996362208E31D800627A3B /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB996361208E31D800627A3B /* CurrentLocation.swift */; };
 		ABA8F47520822BDF0061C9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA8F47420822BDF0061C9F5 /* AppDelegate.swift */; };
 		ABA8F47720822BDF0061C9F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA8F47620822BDF0061C9F5 /* ViewController.swift */; };
 		ABA8F47A20822BDF0061C9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA8F47820822BDF0061C9F5 /* Main.storyboard */; };
 		ABA8F47C20822BE20061C9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA8F47B20822BE20061C9F5 /* Assets.xcassets */; };
 		ABA8F47F20822BE20061C9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA8F47D20822BE20061C9F5 /* LaunchScreen.storyboard */; };
+		FEF96D57A4B57CFEA4F3EF51 /* Pods_NavSail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857664EB0587F8211CACF5E7 /* Pods_NavSail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84984B36215E76FD19DDDF65 /* Pods-NavSail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavSail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavSail/Pods-NavSail.debug.xcconfig"; sourceTree = "<group>"; };
+		857664EB0587F8211CACF5E7 /* Pods_NavSail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavSail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A04DB219D8C850B962D1CF3 /* Pods-NavSail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavSail.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavSail/Pods-NavSail.release.xcconfig"; sourceTree = "<group>"; };
+		AB7B2A32208BFB3C001881A7 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		AB99635B208E2B0900627A3B /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		AB996361208E31D800627A3B /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		ABA8F47120822BDE0061C9F5 /* NavSail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavSail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA8F47420822BDF0061C9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA8F47620822BDF0061C9F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF96D57A4B57CFEA4F3EF51 /* Pods_NavSail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21BD0C20A024589FDD656D90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84984B36215E76FD19DDDF65 /* Pods-NavSail.debug.xcconfig */,
+				9A04DB219D8C850B962D1CF3 /* Pods-NavSail.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88B926650BDDE7F83943226A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				857664EB0587F8211CACF5E7 /* Pods_NavSail.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB7B2A34208BFB54001881A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B2A32208BFB3C001881A7 /* WeatherVC.swift */,
+				ABA8F47620822BDF0061C9F5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AB7B2A35208BFB6C001881A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB99635B208E2B0900627A3B /* WeatherDataModel.swift */,
+				AB996361208E31D800627A3B /* CurrentLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB7B2A36208BFB97001881A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABA8F47820822BDF0061C9F5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB7B2A37208BFBAF001881A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABA8F47B20822BE20061C9F5 /* Assets.xcassets */,
+				ABA8F47D20822BE20061C9F5 /* LaunchScreen.storyboard */,
+				ABA8F47420822BDF0061C9F5 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		ABA8F46820822BDE0061C9F5 = {
 			isa = PBXGroup;
 			children = (
 				ABA8F47320822BDE0061C9F5 /* NavSail */,
 				ABA8F47220822BDE0061C9F5 /* Products */,
+				21BD0C20A024589FDD656D90 /* Pods */,
+				88B926650BDDE7F83943226A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +120,11 @@
 		ABA8F47320822BDE0061C9F5 /* NavSail */ = {
 			isa = PBXGroup;
 			children = (
-				ABA8F47420822BDF0061C9F5 /* AppDelegate.swift */,
-				ABA8F47620822BDF0061C9F5 /* ViewController.swift */,
-				ABA8F47820822BDF0061C9F5 /* Main.storyboard */,
-				ABA8F47B20822BE20061C9F5 /* Assets.xcassets */,
-				ABA8F47D20822BE20061C9F5 /* LaunchScreen.storyboard */,
 				ABA8F48020822BE20061C9F5 /* Info.plist */,
+				AB7B2A37208BFBAF001881A7 /* Supporting Files */,
+				AB7B2A36208BFB97001881A7 /* View */,
+				AB7B2A34208BFB54001881A7 /* Controllers */,
+				AB7B2A35208BFB6C001881A7 /* Model */,
 			);
 			path = NavSail;
 			sourceTree = "<group>";
@@ -71,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABA8F48320822BE20061C9F5 /* Build configuration list for PBXNativeTarget "NavSail" */;
 			buildPhases = (
+				0A86F2078FD1C1FCADD4F2A8 /* [CP] Check Pods Manifest.lock */,
 				ABA8F46D20822BDE0061C9F5 /* Sources */,
 				ABA8F46E20822BDE0061C9F5 /* Frameworks */,
 				ABA8F46F20822BDE0061C9F5 /* Resources */,
+				7E1AA4F46D5C081F23BB6DAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +197,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A86F2078FD1C1FCADD4F2A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NavSail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E1AA4F46D5C081F23BB6DAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NavSail/Pods-NavSail-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavSail/Pods-NavSail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABA8F46D20822BDE0061C9F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB99635C208E2B0900627A3B /* WeatherDataModel.swift in Sources */,
 				ABA8F47720822BDF0061C9F5 /* ViewController.swift in Sources */,
+				AB7B2A33208BFB3C001881A7 /* WeatherVC.swift in Sources */,
+				AB996362208E31D800627A3B /* CurrentLocation.swift in Sources */,
 				ABA8F47520822BDF0061C9F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +389,7 @@
 		};
 		ABA8F48420822BE20061C9F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84984B36215E76FD19DDDF65 /* Pods-NavSail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,12 +402,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.boradincer.NavSail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		ABA8F48520822BE20061C9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A04DB219D8C850B962D1CF3 /* Pods-NavSail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.boradincer.NavSail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
